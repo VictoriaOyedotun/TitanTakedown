@@ -47,9 +47,11 @@ public class Player : MonoBehaviour
         if(movementX > 0){
             //We are going to the riht side
             anim.SetBool(WALK_ANIMATION,true);
+            sr.flipX = false;
         }else if (movementX < 0){
             //We are going to the left side
             anim.SetBool(WALK_ANIMATION,true);
+            sr.flipX = true;
         }else {
             anim.SetBool(WALK_ANIMATION,false);
         }

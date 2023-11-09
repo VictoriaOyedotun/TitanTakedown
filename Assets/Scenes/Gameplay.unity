@@ -7657,23 +7657,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2062610794 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7617644303463268767, guid: 7b536757f28c640c390319795f1f9fd4, type: 3}
+--- !u!50 &2062610798 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 9174739869747712950, guid: 7b536757f28c640c390319795f1f9fd4, type: 3}
   m_PrefabInstance: {fileID: 3538905045861827839}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2062610800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062610794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a956e360c6a49e8a9f4aa810e6b439, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2066883490
 GameObject:
   m_ObjectHideFlags: 0
@@ -7974,6 +7962,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3094883592911883834, guid: 7b536757f28c640c390319795f1f9fd4, type: 3}
+      propertyPath: myBody
+      value: 
+      objectReference: {fileID: 2062610798}
     - target: {fileID: 7617644303463268767, guid: 7b536757f28c640c390319795f1f9fd4, type: 3}
       propertyPath: m_Name
       value: Players_0
@@ -7981,10 +7973,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7617644303463268767, guid: 7b536757f28c640c390319795f1f9fd4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2062610800}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b536757f28c640c390319795f1f9fd4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -12,9 +12,13 @@ public class Player : MonoBehaviour
     private float movementX;
     private Rigidbody2D myBody;
     private SpriteRenderer  sr;
-
     private Animator anim;
+    private bool isGrounded;
+    private string GROUND_TAG = "Ground";
     private string WALK_ANIMATION = "Walk";
+
+
+
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -33,6 +37,11 @@ public class Player : MonoBehaviour
     {
         PlayermMoveKeyboard();
         AnimatePlayer();
+    }
+    
+    // This function is called every fixed framerate Frame
+    private void FixedUpdate(){
+        PlayerJump();
     }
 
     void PlayermMoveKeyboard(){
@@ -56,4 +65,23 @@ public class Player : MonoBehaviour
             anim.SetBool(WALK_ANIMATION,false);
         }
     }
-} // Class
+
+    void PlayerJump(){
+        if(Input.GetButtonDown("Jump") && isGrounded){
+            isGrounded = false;
+            // Adding force to a rigid body
+            // ForceMode2D.Impulse: adding instance force
+            myBody.AddForce(new Vector2(0f,jumpForce),ForceMode2D.Impulse);
+        }
+    }
+    // This method listens to a contact with an other object
+    private void OnCollisionEnter2D(Collision2D collision){
+        //An object with tag 'Ground' collides with an object
+        if(collision.gameObject.CompareTag(GROUND_TAG)){
+            isGrounded = true;
+        }
+
+    }
+} 
+
+

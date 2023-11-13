@@ -6733,6 +6733,8 @@ MonoBehaviour:
   - {fileID: 7258695544997629775, guid: 662072f2431094ac6a1c6ac527c9474a, type: 3}
   - {fileID: 2972975356326181099, guid: cdc55176d531048b9a46c8af2feb2a93, type: 3}
   - {fileID: 1656816287744293462, guid: 8df3ca9cdf5594a83be7daef7d5cea27, type: 3}
+  leftPos: {fileID: 1259585589}
+  rightPos: {fileID: 1710192113}
 --- !u!1 &1733522833
 GameObject:
   m_ObjectHideFlags: 0

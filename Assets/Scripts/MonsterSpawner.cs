@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonsterSpawner : MonoBehaviour
 {
-    [SerializedField]
+    [SerializeField]
     private GameObject[] monsterReference;
     
     // Start is called before the first frame update

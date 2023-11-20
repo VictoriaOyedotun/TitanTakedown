@@ -10,10 +10,15 @@ public class MainMenuController : MonoBehaviour
    //  string clickedObj = EventSystem.current.currentSelectedGameObject.name;
    //  Debug.Log("Index: " + clickedObj);
       // Debug.Log("Button is pressed");
-   //  SceneManager.LoadScene("GamePlay");
+
    int selectedCharacter = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
-   int[] a = new int[10];
-   a[selectedCharacter] = 10;
+
+   GameManager.instance.CharIndex = selectedCharacter;
+
+   SceneManager.LoadScene("GamePlay");
+   
+   //int[] a = new int[10];
+   //a[selectedCharacter] = 10;
    }
 }
 

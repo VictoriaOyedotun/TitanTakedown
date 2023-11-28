@@ -83,8 +83,12 @@ public class Player : MonoBehaviour
         }
 
         if(collision.gameObject.CompareTag(ENEMY_TAG)){
-            ScoreScript.scoreValue += 10;
-            Destroy(gameObject);
+            if(LivesScript.livesScore > 0){
+                LivesScript.livesScore -= 1;
+            }else{
+                Destroy(gameObject);
+            }
+                
         }
     }
 

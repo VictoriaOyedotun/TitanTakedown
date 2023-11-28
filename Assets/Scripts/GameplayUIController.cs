@@ -7,6 +7,7 @@ public class GameplayUIController : MonoBehaviour
 {
     public void RestartGame(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        LivesScript.livesScore = LivesScript.SCORE;
     }
     public void HomeButton(){
         SceneManager.LoadScene("MainMenu");

@@ -14,7 +14,7 @@ public class MovePlayerBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Flip();
     }
 
     void Flip(){

@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     
     public float speed;
     private Rigidbody2D rb;
+    private string ENEMY_TAG = "Enemy";
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +19,11 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         
+    }
+
+  private void OnTriggerEnter2D(Collider2D collision){
+        if (collision.gameObject.CompareTag(ENEMY_TAG)) {
+            Destroy(gameObject);
+        }
     }
 }

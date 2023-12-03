@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -68,7 +69,7 @@ public class Player : MonoBehaviour
     }
 
     void PlayerJump(){
-        if(Input.GetButtonDown("Jump") && isGrounded){
+        if(Keyboard.current.upArrowKey.wasPressedThisFrame && isGrounded){
             isGrounded = false;
             // Adding force to a rigid body
             // ForceMode2D.Impulse: adding instance force

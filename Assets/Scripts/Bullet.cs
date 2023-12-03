@@ -11,14 +11,19 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    rb = GetComponent<Rigidbody2D>();   
-    rb.velocity = transform.right * speed;    
+    rb = GetComponent<Rigidbody2D>();  
+        if(Player.isRight){
+                rb.velocity = transform.right * speed;   
+        }else{
+                rb.velocity = -transform.right * speed;   
+
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // transform.position += transform.right * Time.deltaTime * speed;
     }
 
   private void OnTriggerEnter2D(Collider2D collision){

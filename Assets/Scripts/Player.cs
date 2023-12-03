@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private float movementX;
     private Rigidbody2D myBody;
     private SpriteRenderer  sr;
+    public static bool isRight = false;
     private Animator anim;
     private bool isGrounded;
     private string GROUND_TAG = "Ground";
@@ -59,10 +60,12 @@ public class Player : MonoBehaviour
             //We are going to the riht side
             anim.SetBool(WALK_ANIMATION,true);
             sr.flipX = false;
+            isRight = true;
         }else if (movementX < 0){
             //We are going to the left side
             anim.SetBool(WALK_ANIMATION,true);
             sr.flipX = true;
+            isRight = false;
         }else {
             anim.SetBool(WALK_ANIMATION,false);
         }

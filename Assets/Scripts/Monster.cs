@@ -18,7 +18,7 @@ public class Monster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = Random.Range(1,10); // PCG for monsters health
+        health = Random.Range(1,2); // PCG for monsters health
     }
 
     // Update is called once per frame

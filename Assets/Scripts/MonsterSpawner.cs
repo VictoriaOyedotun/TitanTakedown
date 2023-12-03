@@ -31,12 +31,12 @@ public class MonsterSpawner : MonoBehaviour
         // Left Side
         if(randomSide == 0){
             spawnedMonster.transform.position = leftPos.position;
-            spawnedMonster.GetComponent<Monster>().speed = Random.Range(1,2);
+            spawnedMonster.GetComponent<Monster>().speed = Random.Range(1,2) *  LevelScript.LevelValue;
         }else{
             // Right side
             spawnedMonster.transform.position = rightPos.position;
             // the negative sign is to make the monster go to the oposite side
-            spawnedMonster.GetComponent<Monster>().speed = -Random.Range(1,2);
+            spawnedMonster.GetComponent<Monster>().speed = -Random.Range(1,2) * LevelScript.LevelValue;
             spawnedMonster.transform.localScale = new Vector3(-1f,1f,1f);
         }
       } // while

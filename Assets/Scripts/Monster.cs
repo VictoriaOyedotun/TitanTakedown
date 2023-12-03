@@ -20,7 +20,7 @@ public class Monster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = Random.Range(1,2); // PCG for monsters health
+        health = Random.Range(1,2) * LevelScript.LevelValue; // PCG for monsters health
     }
 
     // Update is called once per frame
@@ -29,9 +29,9 @@ public class Monster : MonoBehaviour
         myBody.velocity = new Vector2(speed,myBody.velocity.y);
     }
 
-    public void TakeDamage(float damage){
-        health -= damage;
-    }
+    // public void TakeDamage(float damage){
+    //     health -= damage;
+    // }
 
      private void OnTriggerEnter2D(Collider2D collision){
         health -= 1;

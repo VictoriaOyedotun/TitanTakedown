@@ -15,10 +15,13 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(LivesScript.livesScore <= 0){
+       isGameOver();
+    }
+
+    public static void isGameOver(){
+         if(LivesScript.livesScore <= 0){
             gameOver.text = "Game Over"; 
         }
     }
-
 
 }

@@ -25,7 +25,7 @@ public class LevelScript : MonoBehaviour
     void Update()
     {
       
-
+        levelUp();
     }
 
     public void levelUp(){

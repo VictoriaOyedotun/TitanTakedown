@@ -11,8 +11,10 @@ public class Monster : MonoBehaviour
     private GameObject redParticles;
     private string BULLET_TAG = "Bullet";
 
+
     void Awake(){
         myBody = GetComponent<Rigidbody2D>();
+
     }
     
     // Start is called before the first frame update
@@ -35,6 +37,8 @@ public class Monster : MonoBehaviour
         health -= 1;
         if (collision.gameObject.CompareTag(BULLET_TAG) && health <= 0) {
             Destroy(gameObject);
+            ScoreScript.scoreValue += 10;
+            LevelScript.levelScriptInstance.levelUp();
         }
     }
 }

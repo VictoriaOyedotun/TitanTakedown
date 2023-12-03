@@ -18,4 +18,5 @@ public class ScoreScript : MonoBehaviour
     {
         score.text = "Score: " + scoreValue;
     }
+
 }

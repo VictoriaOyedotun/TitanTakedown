@@ -1450,7 +1450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 348, y: 462}
+  m_AnchoredPosition: {x: 268, y: 462}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250796256
@@ -3030,7 +3030,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 48, y: 472}
+  m_AnchoredPosition: {x: -119, y: 472}
   m_SizeDelta: {x: 145.27, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &801773528
@@ -8925,7 +8925,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 622, y: 970}
+  m_AnchoredPosition: {x: 622, y: 1054}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2128503925
@@ -9254,7 +9254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingPoint: {fileID: 1687094188}
-  bulletPrefab: {fileID: 241006170059955383, guid: 05753d5ff013b4f82958f9e4d6abce9b, type: 3}
+  bulletPrefab: {fileID: 5002552689111262671, guid: 8b7f068acdab348d4ac1329f614e69c7, type: 3}
 --- !u!4 &3538905045861827843 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1857665533123688014, guid: 7b536757f28c640c390319795f1f9fd4, type: 3}

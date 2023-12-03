@@ -90,6 +90,7 @@ public class Player : MonoBehaviour
             }
                 
         }
+        LivesScript.UpdateLives();
     }
 
     private void OnTriggerEnter2D(Collider2D collision){

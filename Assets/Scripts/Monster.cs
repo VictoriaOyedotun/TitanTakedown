@@ -6,7 +6,7 @@ public class Monster : MonoBehaviour
 {
     [HideInInspector]
     public float speed;
-    private float health = 100;
+    private float health = 1;
     private Rigidbody2D myBody;
     private GameObject redParticles;
     private string BULLET_TAG = "Bullet";
@@ -18,7 +18,7 @@ public class Monster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = Random.Range(1,10); // PCG for monsters health
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class Monster : MonoBehaviour
     }
 
      private void OnTriggerEnter2D(Collider2D collision){
-        health -= 20;
+        health -= 1;
         if (collision.gameObject.CompareTag(BULLET_TAG) && health <= 0) {
             Destroy(gameObject);
         }

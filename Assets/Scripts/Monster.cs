@@ -14,6 +14,7 @@ public class Monster : MonoBehaviour
 
     void Awake(){
         myBody = GetComponent<Rigidbody2D>();
+        GameOver.isGameOver();
 
     }
     

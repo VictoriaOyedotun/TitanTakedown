@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
                 
         }
         LivesScript.UpdateLives();
-        GameOver.isGameOver();
+        // GameOver.isGameOver();
     }
 
     private void OnTriggerEnter2D(Collider2D collision){

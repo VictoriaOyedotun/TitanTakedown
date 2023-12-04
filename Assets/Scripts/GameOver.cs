@@ -23,5 +23,8 @@ public class GameOver : MonoBehaviour
             gameOver.text = "Game Over"; 
         }
     }
+     public static void hideGameOver(){
+            gameOver.text = ""; 
+    }
 
 }

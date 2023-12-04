@@ -24,8 +24,7 @@ public class LevelScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-        levelUp();
+        level.text = "Level: " + LevelValue;
     }
 
     public void levelUp(){
